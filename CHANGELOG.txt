@@ -1,0 +1,4 @@
+# Segenvita Theme Changelog
+
+## [3.2.0] - 2020-02-22
+

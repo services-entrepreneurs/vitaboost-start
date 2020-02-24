@@ -1,0 +1,30 @@
+/* Front Page
+-------------------------------------------------- */
+
+.home .site-inner {
+	padding: 0px 30px 0;
+
+	/* Scene
+	--------------------------------------------- */
+	.scene {
+	  position: relative;
+	  padding: 20px 0;
+
+	  article {
+	  	width: 95%;
+//	    @include container(95%);
+	  } //article
+
+	  @media only screen and (min-width: $full-screen-width) {
+	  //@include breakpoint($wide) {
+	    padding: 40px 0;
+	  } //breakpoint
+
+	  @media only screen and (min-width: $standard-screen-width) {
+	  //@include breakpoint($medium) {
+	    article {
+	      //@include container;
+	    } //article
+	  } // breakpoint
+	} //scene
+}

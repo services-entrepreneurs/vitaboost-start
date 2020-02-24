@@ -1,0 +1,156 @@
+#testimonials {
+  //@include background-image(linear-gradient(top, hsl(0, 0%, 90%), darken($light, 5) ));
+  padding: 4rem 0;
+  // background: hsl(0, 0%, 90%);
+  @include clearfix;
+
+  .testimonials {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    // display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex:  row wrap;
+    -moz-box-flex:  row wrap;
+    -webkit-flex:  row wrap;
+    -ms-flex:  row wrap;
+    flex: row wrap;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .testimonials li {
+      padding: 2rem 0 3rem;
+      width: 100%;
+      @media only screen and (min-width: $tablet-screen-width) {
+      //@include breakpoint($small) {
+        padding: 4rem 4rem;
+      } //breakpoint
+      
+      @media only screen and (min-width: $standard-screen-width) {
+      //@include breakpoint($medium) {
+        width: 33.3333333333%;
+        padding: 2rem 4rem;
+        float: left;
+      } //breakpoint
+  }
+
+  .testimonial-thumb {
+      max-width: 30%;
+      height: auto;
+      float: left;
+      @media only screen and (min-width: $standard-screen-width) {
+      //@include breakpoint($medium) {
+        max-width: 210px;
+        margin: 0 auto;
+        float: none;
+      } //breakpoint
+      @media only screen and (max-width: $small-mobile-screen-width) {
+      	&:after {
+      		.clearfix::after {
+			  content: "";
+			  clear: both;
+			  display: table;
+			}
+      	}
+      }
+  }
+
+  .testimonial-text {
+      float: left;
+      width: 60%;
+      margin-left: 10%;
+      @media only screen and (min-width: $standard-screen-width) {
+      //@include breakpoint($medium) {
+        float: none;
+        width: auto;
+        margin: 0;
+      } //breakpoint
+  }
+  .testimonial-thumb img {
+      border-radius: 210px;
+      border: 5px solid #0073aa;
+      width: 140px;
+      height: 140px;
+      @media only screen and (min-width: $tablet-screen-width) {
+      //@include breakpoint($small) {
+        width: 210px;
+        height: 210px;
+      }
+  }
+
+// .testimonial-thumb{:before {
+// 	   @media only screen and (min-width: $tablet-screen-width) {	
+//   @include breakpoint(0 $small) {
+// 			position: absolute;
+//			content: '';
+// 			background: rgba(230,230,230, 0.5); /*partially transparent image*/
+//			width: 253px;
+// 			height: 253px;
+//			pointer-events: none;
+//		}
+//	}
+
+  .testimonial-name {
+      font-weight: bold;
+      font-size: 24px;
+      font-size: 2.4rem;
+      margin: 2rem 0 0;
+      @media only screen and (min-width: $standard-screen-width) {
+      //@include breakpoint($medium) {
+        text-align: center;
+      } //breakpoint
+  }
+
+  .testimonial-excerpt {
+      font-size: 16px;
+      font-size: 1.6rem;
+  }
+
+
+
+  .event {
+    position: relative;
+    //@include container(100%);
+    //@include breakpoint($small) {
+      //@include span(6 of 12 0);
+    //} //breakpoint
+
+    .content {
+      position: absolute;
+      bottom: 0;
+      background: rgba($black, .7);
+      padding: 30px;
+      color: $white;
+      font-weight: $font-weight--regular;
+      line-height: 130%;
+
+      h2 {
+        color: $white;
+        line-height: 1em;
+      }
+
+      p {
+        padding: 5px 0;
+      }
+     } // content
+
+  } //event
+
+  .clear {
+  	&:before,
+  	&:after {
+	    content: '';
+	    display: table;
+	  } //before, after
+	  	&:after {
+	    clear: both;
+  	} //after
+  }
+
+} //testimonials
+
