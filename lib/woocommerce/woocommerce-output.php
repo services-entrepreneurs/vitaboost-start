@@ -5,9 +5,9 @@
  * This file adds the WooCommerce styles and the Customizer additions for WooCommerce to the Segenvita Theme.
  *
  * @package Segenvita
- * @author  StudioPress
+ * @author  Services-Entrepreneurs
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.services-entrepreneurs.ch/
  */
 
 add_filter( 'woocommerce_enqueue_styles', 'segenvita_woocommerce_styles' );

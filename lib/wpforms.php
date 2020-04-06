@@ -6,9 +6,9 @@
  * page content with a working contact form block during one-click theme setup.
  *
  * @package StudioPress
- * @author  StudioPress
+ * @author  Services-Entrepreneurs
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.services-entrepreneurs.ch/
  */
 
 /**

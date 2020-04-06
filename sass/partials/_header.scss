@@ -8,7 +8,7 @@
 	box-shadow: 0 0 $box-shadow-blur-radius rgba(0, 0, 0, $box-shadow-opacity);
 
 	@media only screen and (min-width: $standard-screen-width) {
-		position: fixed;
+		// position: fixed;
 		z-index: 9999;
 		width: 100%;
 	}
@@ -25,18 +25,18 @@
 	//margin-left: 40px;
 
 	.wp-custom-logo & {
-		width: 70%;
-		max-width: 350px;
+		width: 30%;
+		max-width: 250px;
 		padding-top: 20px;
 		padding-bottom: 5px;
 
 		@media only screen and (min-width: $small-mobile-screen-width) {
-			width: 75%;
+			width: 25%;
 			padding-top: 15px;
 		}
 
 		@media only screen and (min-width: $tablet-screen-width) {
-			width: 100%;
+			width: 80%;
 			padding-top: 5px;
 		}
 

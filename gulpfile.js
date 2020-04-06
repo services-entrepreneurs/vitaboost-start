@@ -239,11 +239,14 @@ gulp.task('js', () => {
  * https://browsersync.io/docs/gulp
  */
 gulp.task('watch', () => {
+	ui: {
+    port: 80
+}
 	browserSync.init({
 		proxy: `http://${siteName}`,
 		host: siteName,
 		open: 'local',
-		port: 3010
+		port: 80
 		// https: {
 		// 	key: `/Users/${userName}/.valet/Certificates/${siteName}.key`,
 		// 	cert: `/Users/${userName}/.valet/Certificates/${siteName}.crt`

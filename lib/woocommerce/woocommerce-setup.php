@@ -5,9 +5,9 @@
  * This file adds the required WooCommerce setup functions to the Segenvita Theme.
  *
  * @package Segenvita
- * @author  StudioPress
+ * @author  Services-Entrepreneurs
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.services-entrepreneurs.ch/
  */
 
 // Adds product gallery support.

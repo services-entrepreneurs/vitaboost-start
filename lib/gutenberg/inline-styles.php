@@ -3,9 +3,9 @@
  * Adds front-end inline styles for the custom Gutenberg color palette.
  *
  * @package Segenvita
- * @author  StudioPress
+ * @author  Services-Entrepreneurs
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.services-entrepreneurs.ch/
  */
 
 add_action( 'wp_enqueue_scripts', 'segenvita_custom_gutenberg_css' );

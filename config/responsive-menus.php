@@ -3,7 +3,7 @@
  * Segenvita child theme.
  *
  * @package Segenvita
- * @author  StudioPress
+ * @author  Services-Entrepreneurs
  * @license GPL-2.0-or-later
  * @link    https://my.studiopress.com/themes/segenvita/
  */

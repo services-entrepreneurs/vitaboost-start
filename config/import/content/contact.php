@@ -8,9 +8,9 @@
  * Visit `/wp-admin/admin.php?page=genesis-getting-started` to trigger import.
  *
  * @package Segenvita
- * @author  StudioPress
+ * @author  Services-Entrepreneurs
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.services-entrepreneurs.ch/
  */
 
 // Requires helper WPForms function to create a new form.

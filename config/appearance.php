@@ -3,9 +3,9 @@
  * Segenvita appearance settings.
  *
  * @package Segenvita
- * @author  StudioPress
+ * @author  Services-Entrepreneurs
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.services-entrepreneurs.ch/
  */
 
 $segenvita_default_colors = [
@@ -27,7 +27,7 @@ $segenvita_link_color_contrast   = segenvita_color_contrast( $segenvita_link_col
 $segenvita_link_color_brightness = segenvita_color_brightness( $segenvita_link_color, 35 );
 
 return [
-	'fonts-url'            => 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&display=swap',
+	'fonts-url'            => 'https://fonts.googleapis.com/css?family=Poppins:300,400,600|Raleway:400,700&display=swap',
 	'content-width'        => 1062,
 	'button-bg'            => $segenvita_link_color,
 	'button-color'         => $segenvita_link_color_contrast,

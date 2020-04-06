@@ -11,7 +11,7 @@ This is a Gulp workflow for automating the following tasks:
 - Generating pixel fallbacks for rem units
 - Generating source maps so browser inspector (like Chrome DevTools) shows the partial .scss file(s) from where CSS rules are originating from
 
-for [Segenvita](https://github.com/copyblogger/genesis-sample), a child theme of the [Genesis] framework.
+for [Segenvita](https://github.com/services-entrepreneurs/vitaboost-start), a child theme of the [Genesis] framework.
 
 ## How to use
 

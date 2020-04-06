@@ -5,7 +5,7 @@
  * Theme supports.
  *
  * @package Segenvita
- * @author  StudioPress
+ * @author  Services-Entrepreneurs
  * @license GPL-2.0-or-later
  * @link    https://my.studiopress.com/themes/segenvita/
  */
@@ -37,6 +37,8 @@ return [
 	'genesis-footer-widgets'          => 3,
 	'genesis-menus'                   => [
 		'primary'   => __( 'Header Menu', 'segenvita' ),
-		'secondary' => __( 'Footer Menu', 'segenvita' ),
+		'secondary' => __( 'Secondary Menu', 'segenvita' ),
+		'tertiary'  => __( 'Language Menu', 'segenvita' ),
+		'quaternary'  => __( 'Search Menu', 'segenvita' ),
 	],
 ];

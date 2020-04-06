@@ -3,9 +3,9 @@
  * Gutenberg theme support.
  *
  * @package Segenvita
- * @author  StudioPress
+ * @author  Services-Entrepreneurs
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.services-entrepreneurs.ch/
  */
 
 add_action( 'wp_enqueue_scripts', 'segenvita_enqueue_gutenberg_frontend_styles' );

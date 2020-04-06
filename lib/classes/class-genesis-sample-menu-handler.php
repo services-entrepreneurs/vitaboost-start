@@ -6,9 +6,9 @@
  * Please do all modifications in the form of a child theme.
  *
  * @package StudioPress\Genesis
- * @author  StudioPress
+ * @author  Services-Entrepreneurs
  * @license GPL-2.0-or-later
- * @link    https://my.studiopress.com/themes/genesis/
+ * @link    https://services-entrepreneurs.ch/
  */
 
 /**

@@ -5,9 +5,9 @@
  * This file adds the Genesis Connect for WooCommerce notice to the Segenvita Theme.
  *
  * @package Segenvita
- * @author  StudioPress
+ * @author  Services-Entrepreneurs
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.services-entrepreneurs.ch/
  */
 
 add_action( 'admin_print_styles', 'segenvita_remove_woocommerce_notice' );

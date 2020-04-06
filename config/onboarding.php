@@ -5,9 +5,9 @@
  * Onboarding config to load plugins and homepage content on theme activation.
  *
  * @package Segenvita
- * @author  StudioPress
+ * @author  Services-Entrepreneurs
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.services-entrepreneurs.ch/
  */
 
 $segenvita_shared_content = genesis_get_config( 'onboarding-shared' );

@@ -1,0 +1,186 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-10 13:51+0100\n"
+"PO-Revision-Date: 2020-03-10 14:11+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+
+#: functions.php:270
+msgid "Search"
+msgstr "Chercher"
+
+#: config/appearance.php:39
+msgid "Custom color"
+msgstr "Couleur personnalisée"
+
+#: config/appearance.php:44
+msgid "Accent color"
+msgstr "Couleur accentuée"
+
+#: config/appearance.php:51
+msgid "Small"
+msgstr "Petit"
+
+#: config/appearance.php:56
+msgid "Normal"
+msgstr "Normal"
+
+#: config/appearance.php:61
+msgid "Large"
+msgstr "Grand"
+
+#: config/appearance.php:66
+msgid "Larger"
+msgstr "Plus  grand"
+
+#: config/child-theme-settings.php:28
+msgid "by"
+msgstr "par"
+
+#: config/onboarding-shared.php:19
+msgid "Atomic Blocks"
+msgstr "Blocs atomiques"
+
+#: config/onboarding-shared.php:24
+msgid "Simple Social Icons"
+msgstr "Icônes sociales simples"
+
+#: config/onboarding-shared.php:29
+msgid "Genesis eNews Extended (Third Party)"
+msgstr "Genesis eNews Extended (tiers)"
+
+#: config/onboarding-shared.php:34
+msgid "WPForms Lite (Third Party)"
+msgstr "WPForms Lite (tiers)"
+
+#: config/onboarding.php:18
+msgid "Black & White"
+msgstr "Noir blanc"
+
+#: config/onboarding.php:19
+msgid "A pack with a homepage designed with black and white images."
+msgstr "Un pack avec une page d'accueil conçue avec des images en noir et blanc."
+
+#: config/onboarding.php:50
+msgid "Color"
+msgstr "Couleur"
+
+#: config/onboarding.php:51
+msgid "A pack with a homepage designed with color images."
+msgstr "Un pack avec une page d'accueil conçue avec des images en couleur."
+
+#: config/theme-supports.php:39
+msgid "Header Menu"
+msgstr "Menu d'en-tête"
+
+#: config/theme-supports.php:40
+msgid "Secondary Menu"
+msgstr "Menu secondaire"
+
+#: config/theme-supports.php:41
+msgid "Language Menu"
+msgstr "Menu Langue"
+
+#: config/theme-supports.php:42
+msgid "Search Menu"
+msgstr "Menu de recherche"
+
+#: lib/customize.php:38
+msgid ""
+"Change the color of post info links and button blocks, the hover color of "
+"linked titles and menu items, and more."
+msgstr ""
+"Modifiez la couleur des liens d'informations sur les articles et des blocs "
+"de boutons, la couleur de survol des titres et des éléments de menu liés, "
+"etc."
+
+#: lib/customize.php:39
+msgid "Link Color"
+msgstr "Couleur du lien"
+
+#: lib/customize.php:59
+msgid ""
+"Change the default hover color for button links, menu buttons, and submit "
+"buttons. The button block uses the Link Color."
+msgstr ""
+"Modifiez la couleur de survol par défaut pour les liens de bouton, les "
+"boutons de menu et les boutons d'envoi. Le bloc de boutons utilise la "
+"couleur du lien."
+
+#: lib/customize.php:60
+msgid "Accent Color"
+msgstr "Couleur accentuée"
+
+#: lib/customize.php:80
+msgid "Logo Width"
+msgstr "Largeur du logo"
+
+#: lib/customize.php:81
+msgid "The maximum width of the logo in pixels."
+msgstr "La largeur maximale du logo en pixels."
+
+#: lib/customize.php:105
+msgid "You must supply a valid number."
+msgstr "Vous devez fournir un numéro valide."
+
+#: lib/customize.php:107
+msgid "The logo width cannot be less than 100."
+msgstr "La largeur du logo ne peut pas être inférieure à 100."
+
+#: lib/site-footer.php:17
+msgid "All Rights Reserved."
+msgstr "Tous les droits sont réservés."
+
+#: lib/wpforms.php:55
+msgid "Simple Contact Form"
+msgstr "Formulaire de contact simple"
+
+#: lib/classes/class-genesis-sample-menu-handler.php:87
+msgid "Mu"
+msgstr "Mu"
+
+#: lib/classes/class-genesis-sample-menu-handler.php:90
+msgid "Submenu"
+msgstr "Sous-menu"
+
+#: lib/woocommerce/woocommerce-notice.php:55
+#, php-format
+msgid ""
+"Please install and activate <a href=\"https://wordpress.org/plugins/genesis-"
+"connect-woocommerce/\" target=\"_blank\">Genesis Connect for WooCommerce</a> "
+"to <strong>enable WooCommerce support for %s</strong>."
+msgstr ""
+"Veuillez installer et activer <a href=\\\"https://wordpress.org/plugins/"
+"genesis-connect-woocommerce/\\\" target=\\\"_blank\\\"> Genesis Connect pour "
+"WooCommerce </a> pour <strong> activer WooCommerce prise en charge de% s </"
+"strong>."
+
+#: lib/woocommerce/woocommerce-notice.php:72
+msgid "install and activate Genesis Connect for WooCommerce"
+msgstr "installer et activer Genesis Connect pour WooCommerce"
+
+#: lib/woocommerce/woocommerce-notice.php:76
+#, php-format
+msgid "Please %1$s to <strong>enable WooCommerce support for %2$s</strong>."
+msgstr "Veuillez% 1 $ s pour <strong> activer la prise en charge de WooCommerce pour% 2 $ s </strong>."
+
+#: lib/woocommerce/woocommerce-setup.php:73
+msgid "Previous Page"
+msgstr "Page précédente"
+
+#: lib/woocommerce/woocommerce-setup.php:74
+msgid "Next Page"
+msgstr "Page suivante"

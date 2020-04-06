@@ -5,9 +5,9 @@
  * This file adds the Customizer additions to the Segenvita Theme.
  *
  * @package Segenvita
- * @author  StudioPress
+ * @author  Services-Entrepreneurs
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.services-entrepreneurs.ch/
  */
 
 add_action( 'customize_register', 'segenvita_customizer_register' );

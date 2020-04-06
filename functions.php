@@ -5,9 +5,9 @@
  * This file adds functions to the Segenvita Theme.
  *
  * @package Segenvita
- * @author  StudioPress
+ * @author  Services-Entrepreneurs
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.services-entrepreneurs.ch/
  */
 
 // Starts the engine.
@@ -36,6 +36,9 @@ require_once get_stylesheet_directory() . '/lib/customize.php';
 
 // Includes Customizer CSS.
 require_once get_stylesheet_directory() . '/lib/output.php';
+
+// Adds specific footer.
+require_once get_stylesheet_directory() . '/lib/site-footer.php';
 
 // Adds WooCommerce support.
 require_once get_stylesheet_directory() . '/lib/woocommerce/woocommerce-setup.php';
@@ -143,12 +146,12 @@ genesis_unregister_layout( 'sidebar-content-sidebar' );
 genesis_unregister_layout( 'sidebar-sidebar-content' );
 
 // Repositions primary navigation menu.
-remove_action( 'genesis_after_header', 'genesis_do_nav' );
-add_action( 'genesis_header', 'genesis_do_nav', 12 );
+// remove_action( 'genesis_after_header', 'genesis_do_nav' );
+// add_action( 'genesis_header', 'genesis_do_nav', 12 );
 
 // Repositions the secondary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
-add_action( 'genesis_footer', 'genesis_do_subnav', 10 );
+add_action( 'genesis_header_right', 'genesis_do_subnav', 10 );
 
 add_filter( 'wp_nav_menu_args', 'segenvita_secondary_menu_args' );
 /**
@@ -166,6 +169,109 @@ function segenvita_secondary_menu_args( $args ) {
 	}
 
 	return $args;
+
+}
+
+// Position the language menu
+add_action( 'genesis_header_right', 'segenvita_do_langnav', 10 );
+
+/**
+ * Echo the "Tertiary Navigation" menu.
+ *
+ * Applies the `segenvita_do_langnav` filter.
+ *
+ * @since 1.0.0
+ */
+function segenvita_do_langnav() {
+
+	// Do nothing if menu not supported.
+	if ( ! genesis_nav_menu_supported( 'tertiary' ) ) {
+		return;
+	}
+
+	$class = 'menu genesis-nav-menu menu-tertiary';
+	if ( genesis_superfish_enabled() ) {
+		$class .= ' js-superfish';
+	}
+
+	genesis_nav_menu(
+		[
+			'theme_location' => 'tertiary',
+			'menu_class'     => $class,
+		]
+	);
+
+}
+
+/* Search menu
+---------------------------------------------- */
+// Position the search menu
+add_action( 'genesis_header_right', 'segenvita_do_search', 50 );
+
+/**
+ * Echo the "Quaternary Navigation" menu.
+ *
+ * Applies the `segenvita_do_search` filter.
+ *
+ * @since 1.0.0
+ */
+function segenvita_do_search() {
+
+	// Do nothing if menu not supported.
+	if ( ! genesis_nav_menu_supported( 'quaternary' ) ) {
+		return;
+	}
+
+	$class = 'menu genesis-nav-menu menu-quaternary';
+	if ( genesis_superfish_enabled() ) {
+		$class .= ' js-superfish';
+	}
+
+	genesis_nav_menu(
+		[
+			'theme_location' => 'quaternary',
+			'menu_class'     => $class,
+		]
+	);
+
+}
+
+/* Search Form in menu
+---------------------------------------------- */
+add_filter( 'wp_nav_menu_items', 'custom_menu_extras', 10, 2 );
+/**
+ * Filter menu items, appending a a search icon at the end.
+ *
+ * @param string   $menu HTML string of list items.
+ * @param stdClass $args Menu arguments.
+ *
+ * @return string Amended HTML string of list items.
+ */
+function custom_menu_extras( $menu, $args ) {
+
+	if ( 'quaternary' !== $args->theme_location ) {
+		return $menu;
+	}
+
+	$menu .= '<li class="menu-item">' . get_search_form( false ) . '</li>';
+
+	return $menu;
+
+}
+
+add_filter( 'genesis_markup_search-form-submit_open', 'custom_search_form_submit' );
+/**
+ * Change Search Form submit button markup.
+ *
+ * @return string Modified HTML for search forms' submit button.
+ */
+function custom_search_form_submit() {
+
+	$search_button_text = apply_filters( 'genesis_search_button_text', esc_attr__( 'Search', 'genesis' ) );
+
+	$searchicon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>';
+
+	return sprintf( '<button type="submit" class="search-form-submit" aria-label="Search">%s<span class="screen-reader-text">%s</span></button>', $searchicon, $search_button_text );
 
 }
 
@@ -199,3 +305,17 @@ function segenvita_comments_gravatar( $args ) {
 	return $args;
 
 }
+
+/**
+ * Search toggle
+ *
+ */
+function ea_search_toggle() {
+	$output = '<button' . ea_amp_class( 'search-toggle', 'active', 'searchActive' ) . ea_amp_toggle( 'searchActive', array( 'menuActive', 'mobileFollow' ) ) . '>';
+		$output .= ea_icon( array( 'icon' => 'search', 'size' => 24, 'class' => 'open' ) );
+		$output .= ea_icon( array( 'icon' => 'close', 'size' => 24, 'class' => 'close' ) );
+		$output .= '<span class="screen-reader-text">Search</span>';
+	$output .= '</button>';
+	return $output;
+}
+

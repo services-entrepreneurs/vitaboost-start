@@ -9,7 +9,7 @@
  * @package Segenvita
  * @author  Joseph Elsener
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.services-entrepreneurs.ch/
  */
 
 add_filter( 'body_class', 'segenvita_home_body_class' );

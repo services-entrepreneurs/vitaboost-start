@@ -5,9 +5,9 @@
  * Homepage content optionally installed after theme activation.
  *
  * @package Segenvita
- * @author  StudioPress
+ * @author  Services-Entrepreneurs
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.services-entrepreneurs.ch/
  */
 
 // Photo by Rohit Tandon on Unsplash: https://unsplash.com/photos/9wg5jCEPBsw.

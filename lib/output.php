@@ -5,9 +5,9 @@
  * This file adds the required CSS to the front end to the Segenvita Theme.
  *
  * @package Segenvita
- * @author  StudioPress
+ * @author  Services-Entrepreneurs
  * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @link    https://www.services-entrepreneurs.ch/
  */
 
 add_action( 'wp_enqueue_scripts', 'segenvita_css' );

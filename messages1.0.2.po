@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Services-Entrepreneurs
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Segenvita 1.0.2\n"
+"Report-Msgid-Bugs-To: info@services-entrepreneurs.ch\n"
+"POT-Creation-Date: 2020-03-10 16:58+0100\n"
+"PO-Revision-Date: 2020-03-10 16:59+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+
+#: functions.php:270
+msgid "Search"
+msgstr ""
+
+#: config/appearance.php:39
+msgid "Custom color"
+msgstr ""
+
+#: config/appearance.php:44
+msgid "Accent color"
+msgstr ""
+
+#: config/appearance.php:51
+msgid "Small"
+msgstr ""
+
+#: config/appearance.php:56
+msgid "Normal"
+msgstr ""
+
+#: config/appearance.php:61
+msgid "Large"
+msgstr ""
+
+#: config/appearance.php:66
+msgid "Larger"
+msgstr ""
+
+#: config/child-theme-settings.php:28
+msgid "by"
+msgstr ""
+
+#: config/onboarding-shared.php:19
+msgid "Atomic Blocks"
+msgstr ""
+
+#: config/onboarding-shared.php:24
+msgid "Simple Social Icons"
+msgstr ""
+
+#: config/onboarding-shared.php:29
+msgid "Genesis eNews Extended (Third Party)"
+msgstr ""
+
+#: config/onboarding-shared.php:34
+msgid "WPForms Lite (Third Party)"
+msgstr ""
+
+#: config/onboarding.php:18
+msgid "Black & White"
+msgstr ""
+
+#: config/onboarding.php:19
+msgid "A pack with a homepage designed with black and white images."
+msgstr ""
+
+#: config/onboarding.php:50
+msgid "Color"
+msgstr ""
+
+#: config/onboarding.php:51
+msgid "A pack with a homepage designed with color images."
+msgstr ""
+
+#: config/theme-supports.php:39
+msgid "Header Menu"
+msgstr ""
+
+#: config/theme-supports.php:40
+msgid "Secondary Menu"
+msgstr ""
+
+#: config/theme-supports.php:41
+msgid "Language Menu"
+msgstr ""
+
+#: config/theme-supports.php:42
+msgid "Search Menu"
+msgstr ""
+
+#: lib/customize.php:38
+msgid ""
+"Change the color of post info links and button blocks, the hover color of "
+"linked titles and menu items, and more."
+msgstr ""
+
+#: lib/customize.php:39
+msgid "Link Color"
+msgstr ""
+
+#: lib/customize.php:59
+msgid ""
+"Change the default hover color for button links, menu buttons, and submit "
+"buttons. The button block uses the Link Color."
+msgstr ""
+
+#: lib/customize.php:60
+msgid "Accent Color"
+msgstr ""
+
+#: lib/customize.php:80
+msgid "Logo Width"
+msgstr ""
+
+#: lib/customize.php:81
+msgid "The maximum width of the logo in pixels."
+msgstr ""
+
+#: lib/customize.php:105
+msgid "You must supply a valid number."
+msgstr ""
+
+#: lib/customize.php:107
+msgid "The logo width cannot be less than 100."
+msgstr ""
+
+#: lib/site-footer.php:17
+msgid "Copyright"
+msgstr ""
+
+#: lib/site-footer.php:17
+msgid "All Rights Reserved."
+msgstr ""
+
+#: lib/site-footer.php:18
+msgid "Privacy Policy"
+msgstr ""
+
+#: lib/site-footer.php:18
+msgid "Terms"
+msgstr ""
+
+#: lib/wpforms.php:55
+msgid "Simple Contact Form"
+msgstr ""
+
+#: lib/classes/class-genesis-sample-menu-handler.php:87
+msgid "Mu"
+msgstr ""
+
+#: lib/classes/class-genesis-sample-menu-handler.php:90
+msgid "Submenu"
+msgstr ""
+
+#: lib/woocommerce/woocommerce-notice.php:55
+#, php-format
+msgid ""
+"Please install and activate <a href=\"https://wordpress.org/plugins/genesis-"
+"connect-woocommerce/\" target=\"_blank\">Genesis Connect for WooCommerce</a> "
+"to <strong>enable WooCommerce support for %s</strong>."
+msgstr ""
+
+#: lib/woocommerce/woocommerce-notice.php:72
+msgid "install and activate Genesis Connect for WooCommerce"
+msgstr ""
+
+#: lib/woocommerce/woocommerce-notice.php:76
+#, php-format
+msgid "Please %1$s to <strong>enable WooCommerce support for %2$s</strong>."
+msgstr ""
+
+#: lib/woocommerce/woocommerce-setup.php:73
+msgid "Previous Page"
+msgstr ""
+
+#: lib/woocommerce/woocommerce-setup.php:74
+msgid "Next Page"
+msgstr ""

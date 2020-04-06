@@ -47,9 +47,33 @@
 	background-color: #fff;
 	font-size: $site-footer--font-size;
 	line-height: $line-height--medium;
-	text-align: center;
+	// display: -ms-flexbox;
+ //    display: -webkit-flex;
+ //    display: flex;
+	
 
 	p {
 		margin-bottom: 0;
+	}
+
+	.footer-container {
+		width: 100%;
+		display: flex;
+		align-items: stretch;
+
+		.footer-left {
+			width: 33.333%;
+			text-align: left;
+		}
+
+		.footer-middle {
+			width: 33.333%;
+			text-align: center;
+		}
+
+		.footer-right {
+			width: 33.333%;
+			text-align: right;
+		}
 	}
 }

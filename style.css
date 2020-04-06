@@ -67,6 +67,9 @@
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 /* Color Theme Swatches in HSLA */
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
 /* HTML5 Reset
 --------------------------------------------- */
 /* Baseline Normalize
@@ -314,7 +317,7 @@ body {
   margin: 0;
   color: #333;
   background-color: #fff;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: 400;
@@ -408,8 +411,8 @@ h4,
 h5,
 h6 {
   margin: 0 0 20px;
-  font-family: "Roboto Slab", sans-serif;
-  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   line-height: 1.2;
 }
 
@@ -840,7 +843,7 @@ th:first-child {
 .site-inner {
   clear: both;
   margin: 0 auto;
-  padding: 60px 30px 0;
+  padding: 15px 30px 0;
 }
 
 /* Content
@@ -1190,8 +1193,8 @@ img.alignright,
 }
 
 .wp-custom-logo .title-area {
-  width: 70%;
-  max-width: 350px;
+  width: 30%;
+  max-width: 250px;
   padding-top: 20px;
   padding-bottom: 5px;
 }
@@ -1269,7 +1272,7 @@ img.alignright,
   color: #333;
   font-size: 15px;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 300;
   text-decoration: none;
 }
 
@@ -1355,10 +1358,7 @@ img.alignright,
   overflow: hidden;
   position: relative;
   z-index: 1000;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 15px 0;
+  margin: 10px auto;
   border-width: 0;
   color: #333;
   background-color: transparent;
@@ -1428,14 +1428,17 @@ img.alignright,
 .nav-primary {
   clear: left;
   width: 100%;
-  font-family: "Roboto Condensed", sans-serif;
-  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Footer Menu
+/* Secondary Menu
 --------------------------------------------- */
 .nav-secondary {
-  margin-top: 10px;
+  margin: 10px 0;
+  position: absolute;
+  right: 10px;
+  /* Social Media icons 
+	----------------------------------------- */
 }
 
 .nav-secondary .genesis-nav-menu {
@@ -1450,6 +1453,123 @@ img.alignright,
   margin-right: 10px;
   margin-left: 10px;
   padding: 0;
+}
+
+.nav-secondary li > a:before {
+  -webkit-font-smoothing: antialiased;
+  font: normal 18px/1 'dashicons';
+  vertical-align: middle;
+  padding-right: 4px;
+  display: inline-block;
+  color: #54c5d6;
+}
+
+.nav-secondary li > a:hover:before {
+  text-decoration: none;
+}
+
+.nav-secondary li.nav-item-facebook > a:before {
+  content: "\f305";
+}
+
+.nav-secondary li.nav-item-facebook a span {
+  display: none;
+}
+
+.nav-secondary li.nav-item-twitter > a:before {
+  content: "\f301";
+}
+
+.nav-secondary li.nav-item-twitter a span {
+  display: none;
+}
+
+/* Tertiary Menu
+--------------------------------------------- */
+.nav-tertiary {
+  margin-top: 40px;
+  float: right;
+  clear: none;
+  width: auto;
+  padding-top: 15px;
+  /* lang items */
+}
+
+.nav-tertiary .genesis-nav-menu {
+  line-height: 1.5;
+}
+
+.nav-tertiary .menu-item {
+  display: inline-block;
+}
+
+.nav-tertiary a {
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 0;
+}
+
+.nav-tertiary .lang-item {
+  max-width: 50px;
+  float: right;
+}
+
+/* Quaternary Menu
+--------------------------------------------- */
+.nav-quaternary {
+  margin-top: 90px;
+  position: absolute;
+  clear: none;
+  width: auto;
+  padding-top: 15px;
+  visibility: hidden;
+  /* search form items */
+}
+
+.nav-quaternary .genesis-nav-menu {
+  line-height: 1.5;
+}
+
+.nav-quaternary .menu-item {
+  display: inline-block;
+}
+
+.nav-quaternary a {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-quaternary a span {
+  visibility: hidden;
+}
+
+.nav-quaternary .search-form {
+  display: flex;
+}
+
+.nav-quaternary .menu-item .search-form {
+  margin-top: 20px;
+  max-width: 300px;
+}
+
+.nav-quaternary .search-form-input {
+  padding: 7px;
+  font-size: 14px;
+}
+
+.nav-quaternary .search-form-submit {
+  border-radius: 0;
+  background-color: #ddd;
+  padding: 0 10px;
+}
+
+.nav-quaternary .search-icon {
+  height: 12px;
+  transform: rotate(90deg);
+}
+
+.nav-quaternary .search-form-submit:hover .search-icon {
+  fill: white;
 }
 
 /* Content Area
@@ -1694,19 +1814,45 @@ img.alignright,
   font-size: 15px;
   font-size: 1.5rem;
   line-height: 1.5;
-  text-align: center;
 }
 
 .site-footer p {
   margin-bottom: 0;
 }
 
+.site-footer .footer-container {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.site-footer .footer-container .footer-left {
+  width: 33.333%;
+  text-align: left;
+}
+
+.site-footer .footer-container .footer-middle {
+  width: 33.333%;
+  text-align: center;
+}
+
+.site-footer .footer-container .footer-right {
+  width: 33.333%;
+  text-align: right;
+}
+
 /* Custom Styles
 -------------------------------------------------- */
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+/* Color Theme Swatches in HSLA */
 /* Front Page
 -------------------------------------------------- */
 .home .site-inner {
-  padding: 0px 30px 0;
+  padding: 30px 30px 0;
   /* Scene
 	--------------------------------------------- */
 }
@@ -1819,17 +1965,52 @@ img.alignright,
   clear: both;
 }
 
+.text-frame {
+  margin-top: 0px !important;
+  margin-right: 0px !important;
+  margin-bottom: 0px !important;
+  margin-left: 0px !important;
+  border: 2px solid #15253c !important;
+  background-color: #54c5d6 !important;
+  border-radius: 3px !important;
+}
+
+.text-frame p {
+  padding: 10px;
+  color: #fff;
+}
+
 @media only screen and (min-width: 375px) {
   .wp-custom-logo .title-area {
-    width: 75%;
+    width: 25%;
     padding-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 419px) {
+  .nav-quaternary {
+    visibility: visible;
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .nav-quaternary {
+    margin-top: 90px;
   }
 }
 
 @media only screen and (min-width: 720px) {
   .wp-custom-logo .title-area {
-    width: 100%;
+    width: 80%;
     padding-top: 5px;
+  }
+  .nav-secondary li > a:before {
+    font: normal 24px/1 'dashicons';
+  }
+  .nav-quaternary {
+    right: 10px;
+    margin-top: 70px;
   }
   #testimonials .testimonials li {
     padding: 4rem 4rem;
@@ -1842,12 +2023,11 @@ img.alignright,
 
 @media only screen and (min-width: 960px) {
   .site-inner {
-    max-width: 1140px;
-    margin-top: 70px;
+    max-width: 1440px;
   }
   .content {
     float: left;
-    width: 85%;
+    width: 75%;
   }
   .sidebar-content .content {
     float: right;
@@ -1926,9 +2106,12 @@ img.alignright,
     padding-left: 30px;
   }
   .site-header {
-    position: fixed;
     z-index: 9999;
     width: 100%;
+  }
+  .nav-quaternary .menu-item .search-form {
+    margin-left: 20px;
+    margin-top: 0;
   }
   .entry {
     margin-bottom: 60px;
@@ -1944,7 +2127,7 @@ img.alignright,
   }
   .sidebar {
     float: right;
-    width: 30%;
+    width: 25%;
   }
   .sidebar-content .sidebar {
     float: left;
@@ -1979,7 +2162,10 @@ img.alignright,
   }
 }
 
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1280px) {
+  .site-inner {
+    padding: 60px 30px 0;
+  }
   .genesis-nav-menu .menu-item {
     display: inline-block;
   }
@@ -2026,6 +2212,11 @@ img.alignright,
   }
   .genesis-responsive-menu {
     display: block;
+    line-height: 2;
+    padding-bottom: 0;
+  }
+  .genesis-responsive-menu .genesis-nav-menu {
+    line-height: 2;
   }
   .genesis-responsive-menu .genesis-nav-menu .sub-menu {
     position: absolute;
@@ -2042,14 +2233,28 @@ img.alignright,
     display: none;
   }
   .nav-primary {
-    float: right;
     clear: none;
     width: auto;
-    padding-top: 15px;
+    padding-left: 35px;
+    background-color: #d1e25b;
+  }
+  .nav-primary .menu-item > a {
+    background-color: #848484;
+    color: #efefef;
+  }
+  .nav-primary .current-menu-item > a {
+    color: #15253C;
+    text-decoration: none;
+  }
+  .nav-primary .menu-item > a:hover {
+    background-color: #fd5e0f;
   }
   .nav-primary .genesis-nav-menu a {
     padding-right: 15px;
     padding-left: 15px;
+  }
+  .nav-secondary li > a:before {
+    font: normal 30px/1 'dashicons';
   }
   .home .site-inner .scene {
     padding: 40px 0;
@@ -2058,7 +2263,13 @@ img.alignright,
 
 @media only screen and (min-width: 1500px) {
   .genesis-nav-menu a {
-    font-size: 2.1rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 719px) {
+  .nav-quaternary {
+    left: 10px;
   }
 }
 

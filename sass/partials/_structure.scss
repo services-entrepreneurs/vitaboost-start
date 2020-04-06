@@ -54,11 +54,15 @@
 .site-inner {
 	clear: both;
 	margin: 0 auto;
-	padding: 60px 30px 0;
+	padding: 15px 30px 0;
+
+	@media only screen and (min-width: $full-screen-width) {
+		padding: 60px 30px 0;
+	}
 
 	@media only screen and (min-width: $standard-screen-width) {
-		max-width: 1140px;
-		margin-top: 70px;
+		max-width: 1440px;
+		// margin-top: 70px;
 	}
 }
 
@@ -69,7 +73,7 @@
 
 	@media only screen and (min-width: $standard-screen-width) {
 		float: left;
-		width: 85%;
+		width: 75%;
 	}
 }
 
